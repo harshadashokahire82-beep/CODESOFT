@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#16213E"
+    android:padding="15dp"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@android:drawable/ic_lock_idle_alarm"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="15dp">
+
+        <TextView
+            android:id="@+id/tvAlarmTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="07:00 AM"
+            android:textSize="28sp"
+            android:textColor="#E0E0E0"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvAlarmLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wake Up"
+            android:textSize="14sp"
+            android:textColor="#A0A0B0"
+            android:layout_marginTop="2dp"/>
+
+    </LinearLayout>
+
+    <Switch
+        android:id="@+id/switchAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:thumbTint="#6C63FF"
+        android:trackTint="#3A3A5C"/>
+
+    <ImageButton
+        android:id="@+id/btnDelete"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@android:drawable/ic_menu_delete"
+        android:background="@android:color/transparent"
+        android:layout_marginStart="8dp"/>
+
+</LinearLayout>

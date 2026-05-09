@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1A1A2E"
+    android:padding="20dp">
+
+    <!-- Current Time -->
+    <TextView
+        android:id="@+id/tvCurrentTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:textSize="60sp"
+        android:textColor="#E0E0E0"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="40dp"/>
+
+    <!-- Current Date -->
+    <TextView
+        android:id="@+id/tvCurrentDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Monday, 01 Jan 2025"
+        android:textSize="18sp"
+        android:textColor="#A0A0B0"
+        android:gravity="center"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#3A3A5C"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Set Alarm Button -->
+    <Button
+        android:id="@+id/btnSetAlarm"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="+ Set New Alarm"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#6C63FF"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Alarms Label -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Alarms"
+        android:textSize="20sp"
+        android:textColor="#E0E0E0"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Alarms List -->
+    <ListView
+        android:id="@+id/lvAlarms"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#3A3A5C"
+        android:dividerHeight="1dp"/>
+
+</LinearLayout>
